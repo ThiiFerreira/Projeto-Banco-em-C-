@@ -1,0 +1,7 @@
+C:\Users\thiag\Documents\Curso C# - Alura\ProjetoBanco\ProjetoBanco\bin\Release\ProjetoBanco.exe.config
+C:\Users\thiag\Documents\Curso C# - Alura\ProjetoBanco\ProjetoBanco\bin\Release\ProjetoBanco.exe
+C:\Users\thiag\Documents\Curso C# - Alura\ProjetoBanco\ProjetoBanco\bin\Release\ProjetoBanco.pdb
+C:\Users\thiag\Documents\Curso C# - Alura\ProjetoBanco\ProjetoBanco\obj\Release\ProjetoBanco.csprojAssemblyReference.cache
+C:\Users\thiag\Documents\Curso C# - Alura\ProjetoBanco\ProjetoBanco\obj\Release\ProjetoBanco.csproj.CoreCompileInputs.cache
+C:\Users\thiag\Documents\Curso C# - Alura\ProjetoBanco\ProjetoBanco\obj\Release\ProjetoBanco.exe
+C:\Users\thiag\Documents\Curso C# - Alura\ProjetoBanco\ProjetoBanco\obj\Release\ProjetoBanco.pdb
