@@ -27,7 +27,6 @@ namespace ProjetoBanco
 					conta = LoginConta(contas);
 				}
 
-
 				Console.Clear();
 				Console.WriteLine($"Bem vindo {conta.Titular.Nome}");
 				PausaElimpaConsole();
@@ -67,7 +66,6 @@ namespace ProjetoBanco
 			{
 				Console.WriteLine(ex.Message);
 				PausaElimpaConsole();
-
 			}
 			return null;
 		}
