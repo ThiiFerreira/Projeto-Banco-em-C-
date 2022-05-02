@@ -22,7 +22,11 @@ namespace ProjetoBanco
 			{
 				ContaCorrente conta = null;
 				//menu de login
-				conta = LoginConta(contas);
+				while (conta == null)
+				{
+					conta = LoginConta(contas);
+				}
+
 
 				Console.Clear();
 				Console.WriteLine($"Bem vindo {conta.Titular.Nome}");
@@ -44,29 +48,28 @@ namespace ProjetoBanco
 		static ContaCorrente LoginConta(List<ContaCorrente> contas)
 		{
 			ContaCorrente contaLogin = null;
-			do
+			Console.Clear();
+			Console.WriteLine("\n----BEM VINDO AO BANCO TH----");
+			Console.WriteLine("\nTELA DE LOGIN");
+			Console.Write("Digite a agencia do seu banco: ");
+			var agencia = int.Parse(Console.ReadLine());
+
+			Console.Write("Digite o numero do seu banco: ");
+			var numeroConta = int.Parse(Console.ReadLine());
+
+			var sistemaBanco = new SistemaAgencia();
+			
+			try
 			{
-				Console.Clear();
-				Console.WriteLine("\n----BEM VINDO AO BANCO TH----");
-				Console.WriteLine("\nTELA DE LOGIN");
-				Console.Write("Digite a agencia do seu banco: ");
-				var agencia = int.Parse(Console.ReadLine());
-				Console.Write("Digite o numero do seu banco: ");
-				var numeroConta = int.Parse(Console.ReadLine());
-				var sistemaBanco = new SistemaAgencia();
-				
-				try
-				{
-					return contaLogin = sistemaBanco.buscarConta(contas, agencia, numeroConta);		
-				}
-				catch (ArgumentException ex)
-				{
-					Console.WriteLine(ex.Message);
-				}
+				return contaLogin = sistemaBanco.buscarConta(contas, agencia, numeroConta);		
+			}
+			catch (ArgumentException ex)
+			{
+				Console.WriteLine(ex.Message);
+				PausaElimpaConsole();
 
-				return null;
-
-			}while(contaLogin == null);
+			}
+			return null;
 		}
 
 		static void MenuConta(ContaCorrente conta, List<ContaCorrente> contas)
